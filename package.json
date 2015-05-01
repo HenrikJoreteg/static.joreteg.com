@@ -1,0 +1,16 @@
+{
+  "name": "static.joreteg.com",
+  "version": "1.0.0",
+  "author": "Henrik Joreteg <henrik@joreteg.com>",
+  "dependencies": {
+    "surge": "^0.11.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/henrikjoreteg/static.joreteg.com"
+  },
+  "scripts": {
+    "commit": "git add --all && git commit -am \"$(date)\" && npm version minor && git push origin master --tags",
+    "ship": "npm run commit && surge -p www -d static.joreteg.com"
+  }
+}
