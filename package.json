@@ -1,6 +1,6 @@
 {
   "name": "static.joreteg.com",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "Henrik Joreteg <henrik@joreteg.com>",
   "dependencies": {
     "surge": "^0.11.1"
