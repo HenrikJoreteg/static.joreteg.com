@@ -11,6 +11,7 @@
   },
   "scripts": {
     "commit": "git add --all && git commit -am \"$(date)\" && npm version minor && git push origin master --tags",
-    "ship": "npm run commit && surge -p www -d static.joreteg.com"
+    "deploy": "surge -p www -d static.joreteg.com",
+    "ship": "npm run commit && npm run deploy"
   }
 }
