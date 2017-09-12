@@ -7,6 +7,7 @@
     "url": "https://github.com/henrikjoreteg/static.joreteg.com"
   },
   "scripts": {
+    "build": "echo 'ok'",
     "ship": "git add --all && git commit -am \"$(date)\" && npm version minor && git push origin master --tags"
   }
 }
